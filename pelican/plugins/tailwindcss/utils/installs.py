@@ -26,5 +26,5 @@ def tailwind(settings):
 def plugins(settings):
     plugins = settings.get("plugins", None)
 
-    if only_tw_plugins and len(only_tw_plugins):
+    if plugins and len(plugins):
         run_in_plugin(f"npm i {' '.join(plugins)}")
